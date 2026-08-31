@@ -105,4 +105,4 @@ for i in range(n):
 points.pop(min_index)
 distances.pop(min_index)
 
-print("Sorted by proximity:", new_list)
+print("Sorted bro:", new_list)
