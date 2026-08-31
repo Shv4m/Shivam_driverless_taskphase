@@ -73,6 +73,9 @@ if final_result is not None:
 
 
 #7q
+
+import math
+
 n = int(input("Enter number of points: "))
 
 points = []
@@ -84,12 +87,10 @@ for i in range(n):
 rx = int(input("Enter reference x: "))
 ry = int(input("Enter reference y: "))
 
-
 distances = []
 for p in points:
     d = math.sqrt((p[0]-rx)**2 + (p[1]-ry)**2)
     distances.append(d)
-
 
 new_list = []
 
@@ -98,3 +99,10 @@ for i in range(n):
     for j in range(1, len(distances)):
         if distances[j] < distances[min_index]:
             min_index = j
+    
+ new_list.append(points[min_index)
+   
+points.pop(min_index)
+distances.pop(min_index)
+
+print("Sorted by proximity:", new_list)
