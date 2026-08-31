@@ -69,3 +69,32 @@ if final_result is not None:
     print("Resultant Matrix:")
     for row in result:
         print(row)
+
+
+
+#7q
+n = int(input("Enter number of points: "))
+
+points = []
+for i in range(n):
+    x = int(input("Enter x: "))
+    y = int(input("Enter y: "))
+    points.append((x, y))
+
+rx = int(input("Enter reference x: "))
+ry = int(input("Enter reference y: "))
+
+
+distances = []
+for p in points:
+    d = math.sqrt((p[0]-rx)**2 + (p[1]-ry)**2)
+    distances.append(d)
+
+
+new_list = []
+
+for i in range(n):
+    min_index = 0
+    for j in range(1, len(distances)):
+        if distances[j] < distances[min_index]:
+            min_index = j
