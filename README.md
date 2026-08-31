@@ -63,9 +63,9 @@ def input_matrix(name):
 A = input_matrix("Matrix A")
 B = input_matrix("Matrix B")
 
-result = matrix_multiply(A, B)
+final_result = matrix_multiply(A, B)
 
-if result is not None:
+if final_result is not None:
     print("Resultant Matrix:")
     for row in result:
         print(row)
